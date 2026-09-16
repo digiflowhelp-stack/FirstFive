@@ -38,7 +38,7 @@ struct HomeScreenView: View {
                     
                     HStack(spacing: 12) {
                         VStack(alignment: .trailing, spacing: 2) {
-                            Text("Halo User")
+                            Text("FirstFive User")
                                 .font(.system(size: 16, weight: .semibold, design: .rounded))
                                 .foregroundColor(.black)
                             
@@ -169,7 +169,7 @@ struct HomeScreenView: View {
                 // Header Section
                 VStack(spacing: 20) {
                     // App Logo
-                    Image("halo-app 1")
+                    Image("FirstFive-app 1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 80, height: 80)
@@ -177,7 +177,7 @@ struct HomeScreenView: View {
                     .padding(.top, 100)
                     
                     // App Title
-                    Text("Halo")
+                    Text("FirstFive")
                         .font(.system(size: 56, weight: .bold, design: .rounded))
                         .foregroundColor(.black)
                         .offset(x: titleOffset)
@@ -202,7 +202,7 @@ struct HomeScreenView: View {
                 ScrollView {
                     LazyVStack(spacing: 20) {
                         ForEach(EmergencyScenario.allCases, id: \.self) { scenario in
-                            HaloEmergencyTile(
+                            FirstFiveEmergencyTile(
                                 scenario: scenario,
                                 neonGreen: neonGreen,
                                 isTrainingMode: isTrainingMode,
@@ -245,7 +245,7 @@ struct HomeScreenView: View {
     }
 }
 
-struct HaloEmergencyTile: View {
+struct FirstFiveEmergencyTile: View {
     let scenario: EmergencyScenario
     let neonGreen: Color
     let isTrainingMode: Bool

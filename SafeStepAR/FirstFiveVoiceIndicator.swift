@@ -1,5 +1,5 @@
 //
-//  HaloVoiceIndicator.swift
+//  FirstFiveVoiceIndicator.swift
 //  SafeStepAR
 //
 //  Created by Harpita Pandian on 04/10/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HaloVoiceIndicator: View {
+struct FirstFiveVoiceIndicator: View {
     @ObservedObject var voiceManager: VoiceGuidanceManager
     @State private var waveAnimations: [Bool] = Array(repeating: false, count: 5)
     
@@ -29,8 +29,8 @@ struct HaloVoiceIndicator: View {
                     }
                 }
                 
-                // Just "Halo" text
-                Text("Halo")
+                // Just "FirstFive" text
+                Text("FirstFive")
                     .font(.system(size: 16, weight: .semibold, design: .rounded))
                     .foregroundColor(.white)
             }
@@ -99,9 +99,9 @@ struct HaloVoiceIndicator: View {
 
 // MARK: - Overlay Extension for Easy Integration
 extension View {
-    func haloVoiceIndicator(_ voiceManager: VoiceGuidanceManager) -> some View {
+    func firstFiveVoiceIndicator(_ voiceManager: VoiceGuidanceManager) -> some View {
         self.overlay(
-            HaloVoiceIndicator(voiceManager: voiceManager)
+            FirstFiveVoiceIndicator(voiceManager: voiceManager)
                 .position(x: UIScreen.main.bounds.width / 2, y: 80),
             alignment: .top
         )
@@ -130,7 +130,7 @@ extension View {
                     .cornerRadius(8)
                 }
             }
-            .haloVoiceIndicator(voiceManager)
+            .firstFiveVoiceIndicator(voiceManager)
         }
     }
     

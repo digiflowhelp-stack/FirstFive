@@ -121,7 +121,7 @@ struct SeizureView: View {
                 Spacer()
             }
         }
-        .haloVoiceIndicator(voiceManager)
+        .firstFiveVoiceIndicator(voiceManager)
         .preferredColorScheme(.dark)
     }
 }

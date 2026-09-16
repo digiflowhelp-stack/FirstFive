@@ -228,7 +228,7 @@ struct AllergicReactionView: View {
                 .transition(.scale.combined(with: .opacity))
             }
         }
-        .haloVoiceIndicator(voiceManager)
+        .firstFiveVoiceIndicator(voiceManager)
         .preferredColorScheme(.dark)
         .onAppear {
             startSequentialWorkflow()

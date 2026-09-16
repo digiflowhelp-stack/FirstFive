@@ -468,7 +468,7 @@ struct StrokeView: View {
                 Spacer()
             }
         }
-        .haloVoiceIndicator(voiceManager)
+        .firstFiveVoiceIndicator(voiceManager)
         .preferredColorScheme(.dark)
     }
 }
