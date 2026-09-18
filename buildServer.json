@@ -12,8 +12,8 @@
 	"argv": [
 		"/opt/homebrew/bin/xcode-build-server"
 	],
-	"workspace": "/Users/harpita/SafeStepV1/SafeStepAR/SafeStepAR.xcodeproj/project.xcworkspace",
-	"build_root": "/Users/harpita/Library/Developer/Xcode/DerivedData/SafeStepAR-hahusaodpwhevwbylaacgdrdfpjf",
-	"scheme": "SafeStepAR",
+	"workspace": "/Users/harpita/SafeStepV1/FirstFive/FirstFive.xcodeproj/project.xcworkspace",
+	"build_root": "/Users/harpita/Library/Developer/Xcode/DerivedData/FirstFive-hahusaodpwhevwbylaacgdrdfpjf",
+	"scheme": "FirstFive",
 	"kind": "xcode"
 }
