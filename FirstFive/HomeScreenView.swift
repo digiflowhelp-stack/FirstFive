@@ -169,10 +169,10 @@ struct HomeScreenView: View {
                 // Header Section
                 VStack(spacing: 20) {
                     // App Logo
-                    Image("FirstFive-app 1")
+                    Image("FirstFiveLogo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 80, height: 80)
+                        .frame(width: 110, height: 110)
                         .scaleEffect(heartScale)
                     .padding(.top, 100)
                     
