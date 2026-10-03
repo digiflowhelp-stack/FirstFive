@@ -1,4 +1,4 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='1024' height='1024' viewBox='0 0 1024 1024'>
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 1024 1024'>
   <defs>
     <linearGradient id='tile' x1='0' y1='0' x2='1' y2='1'>
       <stop offset='0' stop-color='#1C1D20'/><stop offset='1' stop-color='#0A0A0B'/>
@@ -6,9 +6,9 @@
     <linearGradient id='y5' x1='0' y1='0' x2='0.6' y2='1'>
       <stop offset='0' stop-color='#FFD400'/><stop offset='1' stop-color='#FFB300'/>
     </linearGradient>
-    <!-- Hardcoded tight glow bounds and small blur radius -->
-    <filter id='glow' x='-10%' y='-10%' width='120%' height='120%'>
-      <feGaussianBlur stdDeviation='6' result='b'/>
+    <!-- Sharp, micro glow configuration -->
+    <filter id='glow' x='-5%' y='-5%' width='110%' height='110%'>
+      <feGaussianBlur stdDeviation='2' result='b'/>
       <feMerge>
         <feMergeNode in='b'/>
         <feMergeNode in='SourceGraphic'/>
@@ -17,4 +17,5 @@
   </defs>
   <rect x='0' y='0' width='1024' height='1024' rx='232' fill='url(#tile)'/>
   <path d='M571 558H271V447Q290 467 323.0 479.0Q356 491 396 491Q468 491 516.5 458.0Q565 425 588.0 371.0Q611 317 611 253Q611 135 544.0 67.5Q477 0 358 0Q275 0 214.5 28.5Q154 57 122.0 108.0Q90 159 89 225H280Q283 202 300.0 185.0Q317 168 350 168Q385 168 403.0 192.0Q421 216 421 256Q421 295 402.0 315.5Q383 336 347 336Q320 336 303.5 322.5Q287 309 284 289H93V731H571Z' transform='translate(296.54,569.00) scale(0.61560,-0.61560)' fill='url(#y5)' filter='url(#glow)'/>
-  <path d='M 130 790.0 L 372 790.0 L 424 760.0 L 470 658.0 L 516 922.0 L 562 658.0 L 606 760.0 L 656 790.0 L 894 790.0' fill='none' stroke='#FFD400' stroke-width='44' stroke-linecap='round' stroke-linejoin='round' /></svg>
+  <path d='M 130 790.0 L 372 790.0 L 424 760.0 L 470 658.0 L 516 922.0 L 562 658.0 L 606 760.0 L 656 790.0 L 894 790.0' fill='none' stroke='#FFD400' stroke-width='44' stroke-linecap='round' stroke-linejoin='round' />
+</svg>
